@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light">
+    <meta name="description" content="Lamiae El Houdali, junior full-stack developer. React, React Native, Node.js, Express, MongoDB.">
+    <title>Lamiae El Houdali | Junior Full-Stack Developer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&display=swap" rel="stylesheet">
+
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a class="skip" href="#projects">Skip to projects</a>
+
+    <header class="site-header">
+        <div class="wrap header-inner">
+            <a class="brand" href="#top">Lamiae El Houdali</a>
+            <nav class="nav" aria-label="Main">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- HERO -->
+        <section class="band band--dark hero">
+            <div class="wrap hero-grid">
+                <div class="hero-text">
+                    <h1>Lamiae El Houdali</h1>
+                    <p class="hero-role">Junior full-stack developer</p>
+                    <p class="hero-lead">
+                        I build web and Android apps from the interface down to the database.
+                        I finished the Software Development Bootcamp at Circuit Stream
+                        (McGill School of Continuing Studies) in July 2026.
+                    </p>
+                    <div class="actions">
+                        <a class="btn btn--gold" href="#projects">See my projects</a>
+                        <a class="btn btn--line" href="#contact">Contact me</a>
+                    </div>
+                </div>
+
+                <div class="stage" aria-hidden="true">
+                    <div class="float">
+                        <div class="arch-3d" id="arch3d">
+                            <span class="plate plate--far"></span>
+                            <span class="plate plate--near"></span>
+                            <div class="arch">
+                                <img class="arch-photo" src="hero-bg.jpg" alt="">
+                                <div class="code-win">
+                                    <div class="code-bar"><i></i><i></i><i></i><span>main.js</span></div>
+<pre class="code"><span class="k">function</span> <span class="f">nextPage</span>() {
+  <span class="k">if</span> (page &lt; last) {
+    page++;
+    <span class="f">showPage</span>(page);
+  }
+  <span class="f">updateButtons</span>();
+}
+
+<span class="c">// flip, then fill the page</span>
+card.<span class="f">classList</span>
+  .<span class="f">toggle</span>(<span class="s">"flipped"</span>);</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about" class="band band--light">
+            <div class="wrap split">
+                <h2>About</h2>
+                <div class="prose">
+                    <p>I'm a junior full-stack developer in Canada.</p>
+                    <p>
+             I don't like guessing. When something breaks, I look at the network requests
+             and the logs first to see what really happened. Then I test one idea at a
+             time until I find the cause.
+                   </p>
+               <p><strong>Fixing it is good. Knowing why it broke is better.</strong></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="band band--dark">
+            <div class="wrap">
+                <h2>Skills</h2>
+                <div class="skill-groups">
+                    <div>
+                        <h3>Interface</h3>
+                        <ul>
+                            <li>HTML5 and CSS3</li>
+                            <li>JavaScript (ES6) and TypeScript</li>
+                            <li>React and React Router</li>
+                            <li>React Native and Expo</li>
+                            <li>Material UI</li>
+                            <li>Three.js and Recharts</li>
+                            <li>Responsive design</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Server and data</h3>
+                        <ul>
+                            <li>Node.js and Express</li>
+                            <li>MongoDB, Atlas and Mongoose</li>
+                            <li>REST APIs</li>
+                            <li>JWT authentication and bcrypt</li>
+                            <li>API testing with Mocha, Chai and Supertest</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Workflow</h3>
+                        <ul>
+                            <li>Git and GitHub</li>
+                            <li>VS Code</li>
+                            <li>Postman for API testing</li>
+                            <li>npm</li>
+                            <li>Deploying to Render and GitHub Pages</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="band band--light">
+            <div class="wrap">
+                <h2>Projects</h2>
+
+                <div class="cards">
+
+                    <article class="flip">
+                        <div class="flip-inner">
+                            <div class="face face--front">
+                                <p class="kind">Capstone, web and Android</p>
+                                <h3>Spiritual Corner</h3>
+                                <p>
+                                    An Islamic companion app with prayer times, a live Qibla compass, Quran recitation,
+                                    a Good Deeds tracker, and a PIN-locked journal with AES-256 encryption.
+                                    English and French supported.
+                                </p>
+                                <button class="btn btn--teal" type="button" data-flip aria-expanded="false">Show details</button>
+                                <img class="shot" src="images/Spiritualcorner.png" alt="Screenshot of Spiritual Corner">
+                            </div>
+                            <div class="face face--back">
+                                <h3>Spiritual Corner</h3>
+                                <p class="back-label">Built with</p>
+                                <p>React Native, Expo, TypeScript, Node.js, Express, MongoDB, Mongoose, JWT, AES-256, Mocha</p>
+                                <div class="links">
+                                    <a href="https://spiritual-corner-web.onrender.com/" target="_blank" rel="noopener">Live site</a>
+                                    <a href="https://github.com/Lamiaeelhoudali/Spiritual-corner" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                                <button class="btn btn--line" type="button" data-flip>Back</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flip">
+                        <div class="flip-inner">
+                            <div class="face face--front">
+                                <p class="kind">Notes and journaling app</p>
+                                <h3>Haven</h3>
+                                <p>
+                                    A calendar shows which days you wrote. Add mood tracking, PIN-locked entries,
+                                    and dark and light mode with 8 extra color themes.
+                                    Recognized as the cohort's top project.
+                                </p>
+                                <button class="btn btn--teal" type="button" data-flip aria-expanded="false">Show details</button>
+                                <img class="shot" src="images/haven.png" alt="Screenshot of Haven">
+                            </div>
+                            <div class="face face--back">
+                                <h3>Haven</h3>
+                                <p class="back-label">Built with</p>
+                                <p>React, React Router, Axios, Node.js, Express, MongoDB, JWT, bcrypt</p>
+                                <div class="links">
+                                    <a href="https://haven-noteapp.onrender.com/" target="_blank" rel="noopener">Live site</a>
+                                    <a href="https://github.com/Lamiaeelhoudali/Haven-noteapp" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                                <button class="btn btn--line" type="button" data-flip>Back</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flip">
+                        <div class="flip-inner">
+                            <div class="face face--front">
+                                <p class="kind">React weather app</p>
+                                <h3>Weather forecasting app</h3>
+                                <p>
+                                    Current conditions, a 5-day forecast, and hourly breakdowns, with an animated
+                                    Three.js background that follows the real day, night, and weather.
+                                </p>
+                                <button class="btn btn--teal" type="button" data-flip aria-expanded="false">Show details</button>
+                                <img class="shot" src="images/Weatherapp.png" alt="Screenshot of WeatherNow">
+                            </div>
+                            <div class="face face--back">
+                                <h3>WeatherNow</h3>
+                                <p class="back-label">Built with</p>
+                                <p>React, Material UI, OpenWeatherMap API, Three.js, Recharts, localStorage</p>
+                                <div class="links">
+                                    <a href="https://weather-forecasting-app-eish.onrender.com//" target="_blank" rel="noopener">Live site</a>
+                                    <a href="https://github.com/Lamiaeelhoudali/weather-forecasting-app" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                                <button class="btn btn--line" type="button" data-flip>Back</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flip">
+                        <div class="flip-inner">
+                            <div class="face face--front">
+                                <p class="kind">Interactive menu</p>
+                                <h3>Restaurant Menu</h3>
+                                <p>
+                                    A Moroccan restaurant menu built as a flip book. Next and Previous buttons turn
+                                    the pages, and each dish card flips to show a photo.
+                                </p>
+                                <button class="btn btn--teal" type="button" data-flip aria-expanded="false">Show details</button>
+                                <img class="shot" src="images/Moroccanrestaurant.png" alt="Screenshot of Restaurant Menu">
+                            </div>
+                            <div class="face face--back">
+                                <h3>Restaurant Menu</h3>
+                                <p class="back-label">Built with</p>
+                                <p>HTML, CSS 3D transforms, vanilla JavaScript</p>
+                                <div class="links">
+                                    <a href="https://lamiaeelhoudali.github.io/Restaurant-Menu/" target="_blank" rel="noopener">Live site</a>
+                                    <a href="https://github.com/Lamiaeelhoudali/Restaurant-Menu" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                                <button class="btn btn--line" type="button" data-flip>Back</button>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="flip">
+                        <div class="flip-inner">
+                            <div class="face face--front">
+                                <p class="kind">Website creation, HTML and CSS</p>
+                                <h3>Personal Website</h3>
+                                <p>
+                                    My first website creation project: a personal portfolio built with plain HTML and CSS. It uses Flexbox and Grid
+                                    to show projects and skills clearly, and I improved it after feedback.
+                                </p>
+                                <button class="btn btn--teal" type="button" data-flip aria-expanded="false">Show details</button>
+                                <img class="shot" src="images/Portofolio.png" alt="Screenshot of My First Website">
+                            </div>
+                            <div class="face face--back">
+                                <h3>My First Website</h3>
+                                <p class="back-label">Built with</p>
+                                <p>HTML5, CSS3, Flexbox, Grid</p>
+                                <div class="links">
+                                    <a href="https://lamiaeelhoudali.github.io/Personal-website/" target="_blank" rel="noopener">Live site</a>
+                                    <a href="https://github.com/Lamiaeelhoudali/Portfolio" target="_blank" rel="noopener">GitHub</a>
+                                </div>
+                                <button class="btn btn--line" type="button" data-flip>Back</button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="band band--dark">
+            <div class="wrap split">
+                <h2>Contact</h2>
+                <div class="prose">
+                    <p>I am looking for a junior developer role. Email is the best way to reach me.</p>
+                    <p><a class="big-link" href="mailto:lamiae.elhoudali@outlook.com">lamiae.elhoudali@outlook.com</a></p>
+                    <p><a class="plain-link" href="https://github.com/Lamiaeelhoudali" target="_blank" rel="noopener">github.com/Lamiaeelhoudali</a></p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <p>&copy; 2026 Lamiae El Houdali</a>.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 3D tilt that follows the mouse (skipped for touch and reduced motion)
+        (function () {
+            var calm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+            if (calm) return;
+
+            var hero = document.querySelector('.hero');
+            var arch = document.getElementById('arch3d');
+            hero.addEventListener('pointermove', function (e) {
+                if (e.pointerType !== 'mouse') return;
+                var r = hero.getBoundingClientRect();
+                var px = (e.clientX - r.left) / r.width - 0.5;
+                var py = (e.clientY - r.top) / r.height - 0.5;
+                arch.style.setProperty('--ry', (px * 24) + 'deg');
+                arch.style.setProperty('--rx', (-py * 16) + 'deg');
+            });
+            hero.addEventListener('pointerleave', function () {
+                arch.style.setProperty('--ry', '0deg');
+                arch.style.setProperty('--rx', '0deg');
+            });
+
+            document.querySelectorAll('.flip').forEach(function (card) {
+                card.addEventListener('pointermove', function (e) {
+                    if (e.pointerType !== 'mouse') return;
+                    var r = card.getBoundingClientRect();
+                    var px = (e.clientX - r.left) / r.width - 0.5;
+                    var py = (e.clientY - r.top) / r.height - 0.5;
+                    card.style.setProperty('--ty', (px * 10) + 'deg');
+                    card.style.setProperty('--tx', (-py * 8) + 'deg');
+                });
+                card.addEventListener('pointerleave', function () {
+                    card.style.setProperty('--ty', '0deg');
+                    card.style.setProperty('--tx', '0deg');
+                });
+            });
+        })();
+
+        // Flip cards with the Show details / Back buttons
+        document.querySelectorAll('.flip').forEach(function (card) {
+            var front = card.querySelector('.face--front');
+            var back = card.querySelector('.face--back');
+            var opener = front.querySelector('[data-flip]');
+
+            function setFlipped(flipped) {
+                card.classList.toggle('is-flipped', flipped);
+                front.inert = flipped;
+                back.inert = !flipped;
+                front.setAttribute('aria-hidden', String(flipped));
+                back.setAttribute('aria-hidden', String(!flipped));
+                opener.setAttribute('aria-expanded', String(flipped));
+            }
+
+            setFlipped(false);
+
+            card.querySelectorAll('[data-flip]').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    var next = !card.classList.contains('is-flipped');
+                    setFlipped(next);
+                    (next ? back : front).querySelector('[data-flip]').focus();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
